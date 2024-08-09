@@ -22,7 +22,7 @@ def close_db_connection(conn, cursor):
     if cursor is not None:
         cursor.close()
     if conn is not None:
-        conn.close()
+        conn.close() # may upload excel instead of using database
 
 # Calculate Exponential Moving Average (EMA)
 def EMA(series, n):
